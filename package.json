@@ -1,0 +1,31 @@
+{
+  "name": "micompaapi",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^8.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beatt/micompaapi.git"
+  },
+  "author": "Gabriel J.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Beatt/micompaapi/issues"
+  },
+  "homepage": "https://github.com/Beatt/micompaapi#readme",
+  "engines": {
+    "node": ">=14.20.0"
+  }
+}
