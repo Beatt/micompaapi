@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "ebffa9de-03ab-4283-a5e3-d1e12828b4a0",
+		"name": "micompa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3558721"
+	},
+	"item": [
+		{
+			"name": "codigospostales",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"cp\": \"14034\",\n        \"street\": \"3a poniente 19\",\n        \"municipality\": \"Tlalpan\",\n        \"state\": \"Ciudad de México\",\n        \"city\" : \"Ciudad de México\",\n        \"country\": \"México\",\n        \"interior_number\": \"SN\",\n        \"outdoor_number\": \"7\",\n        \"suburb\": \"Isidro fabela\"\n    } ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/codigos_postales",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"codigos_postales"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
