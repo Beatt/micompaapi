@@ -7,13 +7,13 @@
 	},
 	"item": [
 		{
-			"name": "codigospostales",
+			"name": "addresses",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n        \"cp\": \"14034\",\n        \"street\": \"3a poniente 19\",\n        \"municipality\": \"Tlalpan\",\n        \"state\": \"Ciudad de México\",\n        \"city\" : \"Ciudad de México\",\n        \"country\": \"México\",\n        \"interior_number\": \"SN\",\n        \"outdoor_number\": \"7\",\n        \"suburb\": \"Isidro fabela\"\n    } ",
+					"raw": "{\n    \"cp\": \"14036\",\n    \"street\": \"3a poniente 19\",\n    \"municipality\": \"Tlalpan\",\n    \"state\": \"Ciudad de México\",\n    \"city\" : \"Ciudad de México\",\n    \"country\": \"México\",\n    \"interior_number\": \"SN\",\n    \"outdoor_number\": \"7\",\n    \"suburb\": \"Isidro fabela\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,12 +21,92 @@
 					}
 				},
 				"url": {
-					"raw": "{{api}}/codigos_postales",
+					"raw": "{{api}}/addresses",
 					"host": [
 						"{{api}}"
 					],
 					"path": [
-						"codigos_postales"
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addresses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/addresses",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addresses",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/addresses/1",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"addresses",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addresses",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cp\": \"14036\",\n    \"street\": \"3a poniente 17\",\n    \"municipality\": \"Tlalpan\",\n    \"state\": \"Ciudad de México\",\n    \"city\" : \"Ciudad de México\",\n    \"country\": \"México\",\n    \"interior_number\": \"SN\",\n    \"outdoor_number\": \"7\",\n    \"suburb\": \"Isidro fabela\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/addresses/2",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"addresses",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/addresses/2",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"addresses",
+						"2"
 					]
 				}
 			},
