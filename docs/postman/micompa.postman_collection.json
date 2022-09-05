@@ -111,6 +111,54 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "catalogs.suburbs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/catalogs/suburbs?postal_code=14030",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogs",
+						"suburbs"
+					],
+					"query": [
+						{
+							"key": "postal_code",
+							"value": "14030"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "catalogs.postal_code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/catalogs/postal_code?postal_code=14030",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogs",
+						"postal_code"
+					],
+					"query": [
+						{
+							"key": "postal_code",
+							"value": "14030"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

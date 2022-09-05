@@ -42,7 +42,7 @@ class CopomexApi
 
   def create_response_suburbs(data)
     response = []
-    data['response']['colonia'].each do |item|
+    data['colonia'].each do |item|
       response_suburb = ResponseSuburb.new
       response_suburb.name = item
       response.append response_suburb
