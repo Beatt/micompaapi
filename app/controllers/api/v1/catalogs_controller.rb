@@ -19,7 +19,7 @@ module Api
       private
 
       def initialize_search_engine
-        @search_engine = CatalogService.new(CopomexApi.new(Faraday.new)).search_engine
+        @search_engine = CatalogService.new(Copomex::Client.new(Faraday.new)).search_engine
       end
     end
   end

@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-describe 'Copomex' do
+describe 'Clients::Copomex::Client' do
   it 'find postal code' do
     response = instance_double('Faraday::Response', body: '{
           "error": false,
@@ -25,7 +25,7 @@ describe 'Copomex' do
       }')
     cp = '14030'
     faraday = class_double('Faraday', get: response)
-    res = CopomexApi.new(faraday).find_postal_code(cp)
+    res = Copomex::Client.new(faraday).find_postal_code(cp)
 
     expect(res.country).to eq('México')
     expect(res.city).to eq('Ciudad de México')
@@ -47,7 +47,7 @@ describe 'Copomex' do
       }')
     cp = '14030'
     faraday = class_double('Faraday', get: response)
-    res = CopomexApi.new(faraday).find_suburbs_by_postal_code(cp)
+    res = Copomex::Client.new(faraday).find_suburbs_by_postal_code(cp)
 
     expect(res.size).to eq(2)
     expect(res[0].name).to eq('Minerva')
