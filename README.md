@@ -1,24 +1,44 @@
-# README
+# Descripción
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Prueba técnica de mi compa FULLSTACK. Crear CRUD para registrar direcciones, apoyándonos de
+Copomex para la ubicación, búsqueda y manejo de códigos postales, estados, municipios y colonias en México.
 
-Things you may want to cover:
 
-* Ruby version
+## Requerimientos
 
-* System dependencies
+- Ruby v3.1.2
+- PostgreSQL dev package
+  - Ubuntu. `sudo apt-get install libpq-dev`
+- Docker
 
-* Configuration
+## Tecnologías
 
-* Database creation
+- Rails
+- Rspec
+- Faraday
+- Rack CORS
+- Rubocop
+- Husky
+- Postgres
+- Docker
+- Copomex
 
-* Database initialization
+## Instalación
 
-* How to run the test suite
+- `git clone git@github.com:Beatt/micompaapi.git`
+- `bundle install`
+- `docker-compose up`
+- Copiar **.env.development** y renombrar a **.env.development.local**
+- Modificar **COPOMEX_TOKEN** de **.env.development.local**
+- `rails s`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Tests
 
-* Deployment instructions
+`bundle exec rspec spec`
 
-* ...
+## Formatting code
+
+`rubocop -a spec app`
+
+_Nota. Hay casos donde la modificación se debe realizar a mano_
+
