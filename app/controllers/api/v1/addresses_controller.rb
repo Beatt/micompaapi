@@ -21,9 +21,7 @@ module Api
 
       def create
         address_found = Address.find_by_cp(address_params[:cp])
-        if address_found.present?
-          return conflict_error("¡El código postal #{address_params[:cp]} ya existe!"), status: :conflict
-        end
+        return conflict_error("¡El código postal #{address_params[:cp]} ya existe!") if address_found.present?
 
         begin
           address = AddressService.new.create(address_params)
