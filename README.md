@@ -42,3 +42,12 @@ Copomex para la ubicación, búsqueda y manejo de códigos postales, estados, mu
 
 _Nota. Hay casos donde la modificación se debe realizar a mano_
 
+## Documentación de API
+
+Para conocer los endpoints que expone el API, solo debemos de importar las collecciones
+y environments para comenzar a probar.
+
+#### Postman
+
+- Importar docs/postman/micompa.dev.postman_environment.json
+- Importar docs/postman/micompa.postman_collection.json
